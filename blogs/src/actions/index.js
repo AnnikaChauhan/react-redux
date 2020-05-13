@@ -15,5 +15,5 @@ import jsonPlaceholder from '../apis/jsonPlaceholder';
 //this is the new refactored layout that does the same as above but looks neater, it is simple a function returning a function
 export const fetchPosts = () => async dispatch => {
     const response = await jsonPlaceholder.get('/posts');
-    dispatch({ type: 'FETCH_POSTS', payload: response })
+    dispatch({ type: 'FETCH_POSTS', payload: response.data })
 };
