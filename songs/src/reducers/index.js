@@ -10,6 +10,7 @@ const songsReducer = () => {
     ];
 };
 
+//the parameter that equals null is required because it means that the first time the reducer runs (on initialisation of the app) selectedSong doesn't return an undefined value, it's specified to be null in the first instance
 const selectedSongReducer = (selectedSong = null, action) => {
     if(action.type === 'SONG_SELECTED'){
         return action.payload;

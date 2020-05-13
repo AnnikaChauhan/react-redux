@@ -1,5 +1,4 @@
 import jsonPlaceholder from '../apis/jsonPlaceholder';
-import { dispatch } from 'redux-thunk';
 
 //this one is the middleware so looks a bit different to other actions
 //with redux thunk you can now use async/await again, where it couldn't be used in vanilla redux
